@@ -140,7 +140,7 @@ This hardware overlay is extremely helpful for debugging timing issues and verif
 <!--
 Uncomment and point these to your exported images when ready.
 
-![System schematic](images/system-schematic.png)
+![System schematic](images/schematic.png)
 ![FPGA top-level block diagram](images/fpga-top-block-diagram.svg)
 -->
 
