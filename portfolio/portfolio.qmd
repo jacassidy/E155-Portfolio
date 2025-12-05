@@ -10,15 +10,14 @@ format:
 
 # Abstract
 
-This project implements a complete **Tetris game system** using a dedicated microcontroller (MCU) and an FPGA working together over a well-defined hardware interface. The FPGA implements the **real-time game logic and VGA video pipeline**, while the MCU provides **hardware random number generation**, configuration, and a control/status channel. The final system drives a VGA display at 640×480@60 Hz, accepts input from a PS/2 keyboard, and renders a flicker-free Tetris game with proper line clears, scoring, and loss detection.
+This project implements a complete **Tetris game system** using a dedicated microcontroller (MCU) and an FPGA working together over a well-defined hardware interface. The FPGA implements the **real-time game logic and VGA video pipeline**, while the MCU provides **hardware random number generation** and a control channel for the game. The final system drives a VGA display at 640×480@60 Hz, accepts input from a PS/2 keyboard, and renders a flicker-free Tetris game with proper line clears and loss detection.
 
 The main goals of this project were to:
 
 - Demonstrate **hardware/software co-design** using a discrete MCU and FPGA.
 - Implement a **fully hardware Tetris pipeline** on the FPGA with clean, parameterized RTL.
 - Meet real-time **display and responsiveness requirements** (>\~20 Hz update, no visible flicker or ghosting).
-- Extend the course reference designs with **new hardware modules** including SPI-based telemetry, line-clear logic, and debug overlays.
-
+- Extend the course reference designs with **new hardware modules** including on board MCU entropy-based randomization and FPGA PLL module.
 ---
 
 # Proficiency & Technical Information
