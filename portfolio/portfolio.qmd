@@ -28,9 +28,8 @@ The main goals of this project were to:
 At a high level, the system consists of:
 
 - A **microcontroller (MCU)** responsible for:
-  - Generating hardware random numbers used to select new tetromino pieces.
-  - Sending configuration and debug commands over SPI.
-  - Optionally logging game telemetry for analysis.
+  - Generating hardware random numbers used to select new Tetris pieces.
+  - Sending configuration and Keyboard commands over SPI.
 
 - An **FPGA** responsible for:
   - VGA timing generation at 640×480@60 Hz using an on-chip PLL.
