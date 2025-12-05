@@ -158,23 +158,17 @@ Uncomment and point these to your exported images when ready.
 
 The table below lists the main hardware components used in the MicroPs system. Fill in the rows with your exact parts, quantities, and prices.
 
-| Item / RefDes | Description                                | Manufacturer / Part # | Qty | Unit Price (USD) | Ext. Price (USD) |
-|---------------|--------------------------------------------|-----------------------|-----|------------------|------------------|
-<!--
-| U1            | FPGA development board                     |                       | 1   |                  |                  |
-| U2            | Microcontroller development board          |                       | 1   |                  |                  |
-| J1            | VGA connector (HD-15)                      |                       | 1   |                  |                  |
-| J2            | PS/2 connector                             |                       | 1   |                  |                  |
-| R*            | Resistor ladder for VGA DAC                |                       |     |                  |                  |
-| C*            | Decoupling capacitors                      |                       |     |                  |                  |
-| ...           | ...                                        |                       |     |                  |                  |
--->
+| Item / RefDes | Description                                | Qty | Unit Price (USD) |
+|---------------|--------------------------------------------|-----|------------------|
+| U1            | FPGA development board                     |  1  |       -          |
+| U2            | Microcontroller development board          |  1  |       -          |
+| J1            | VGA connector (HD-15)                      |  1  |     14.26        |
+| J2            | PS/2 connector                             |  1  |     9.36         |
+| -             | Ps2 Keyboard                               |  1  |    (Stockroom)   |
+| -             | VGA display                                |  1  |    (Stockroom)   |
 
-You can add subtotals if needed:
 
-- **Electronics subtotal:**
-- **Mechanical / misc subtotal:**
-- **Total project cost:**
+**Total project cost: 23.62**
 
 ## New Hardware
 
