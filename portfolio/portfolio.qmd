@@ -166,7 +166,7 @@ The table below lists the main hardware components used in the MicroPs system. F
 
 ## New Hardware
 
-### New RTL Hardware Modules
+### RTL Hardware Modules
 
 In addition to the material covered in class, the project includes several **new hardware modules**:
 
@@ -192,20 +192,11 @@ In addition to the material covered in class, the project includes several **new
   - Parameterized in number of signals and bit-width.
   - Renders debug information directly into the frame, making it easy to observe internal state without a logic analyzer.
 
-### New Physical Hardware (If Any)
+### New Physical Hardware
 
-If you designed any **custom PCBs or adapter boards** (for connectors, user input, or power distribution), they can be described here. For example:
+On the FPGA side, we extended the baseline course design by integrating the on-chip low-speed oscillator and a hardware PLL to generate a stable pixel clock for VGA output. This required configuring new clocking resources, managing clock domains, and verifying that the timing met VGA 640×480 @ 60 Hz requirements. We then routed these signals through custom VGA timing and pixel-generation modules to drive an external VGA display, which introduced a completely new output format compared to the standard lab exercises.
 
-- A small IO board that breaks out VGA, PS/2, and buttons from the FPGA dev board headers.
-- A power board to distribute 5 V / 3.3 V to both MCU and FPGA boards with fusing and test points.
-
-<!--
-You can add photos when ready:
-
-![Custom IO board](images/custom-io-board.jpg)
--->
-
-These new hardware elements demonstrate proficiency in extending reference designs with substantial, original functionality.
+On the microcontroller side, we implemented two major features beyond the core course content: an internal hardware-based random source and a PS/2 keyboard interface. The internal random generator is used to provide non-deterministic, hardware-driven piece generation for the Tetris game, while the PS/2 interface allowed us to accept real-time player input using a standard PS/2 keyboard. Both of these features required new peripheral configuration, custom protocols, and additional firmware modules that go beyond the standard course material.
 
 ---
 
