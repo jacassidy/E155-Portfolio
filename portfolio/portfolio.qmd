@@ -138,11 +138,8 @@ This hardware overlay is extremely helpful for debugging timing issues and verif
 - SPI, PS/2, and VGA connectors with signal names and reference designators.
 - Any custom IO or adapter boards used.
 
-<!--
-Uncomment and point these to your exported images when ready.
-
 ![System schematic](images/schematic.png)
-![FPGA top-level block diagram](images/fpga-top-block-diagram.svg)
+![FPGA top-level block diagram](images/Blockdiagram.svg)
 -->
 
 ---
